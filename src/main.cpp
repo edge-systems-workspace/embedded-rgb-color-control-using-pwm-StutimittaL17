@@ -21,3 +21,15 @@ int blue_led = 11;   ///< Blue LED connected to digital pin 11
  * This function runs once when the Arduino starts.
  * It sets all RGB pins to OUTPUT mode.
  */
+void setup() {
+  pinMode(red_led, OUTPUT);
+  pinMode(green_led, OUTPUT);
+  pinMode(blue_led, OUTPUT);
+}
+
+/**
+ * @brief Main loop to cycle RGB colors.
+ * 
+ * This function continuously runs and changes the LED colors
+ * every 1 second using digitalWrite() and delay().
+ */
